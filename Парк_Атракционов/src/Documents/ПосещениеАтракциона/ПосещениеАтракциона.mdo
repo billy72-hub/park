@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="21c3a49b-84df-48c0-94e5-09918b74a146">
+  <producedTypes>
+    <objectType typeId="40554057-2e97-4766-9ef3-36b872150e23" valueTypeId="e8ee4d3f-9b2d-47e2-b5a4-6e948ad2afdf"/>
+    <refType typeId="d0204d99-91f2-4837-be78-66ee4d0c79e5" valueTypeId="6789c06e-f000-4b7b-b67b-dfa17ffeeead"/>
+    <selectionType typeId="8423400e-23bc-44db-ab8a-4e6264ae3dc3" valueTypeId="7a760aba-2475-49a2-876d-e7b7775e77b4"/>
+    <listType typeId="773de3b9-626a-4ed6-a5ee-c6ba72992320" valueTypeId="5d0478e3-3958-44a5-9b47-feed917341c9"/>
+    <managerType typeId="a0a0ab5b-0890-406a-9963-2a9abfff577b" valueTypeId="dac1ab53-3518-4e19-8e6e-d049722594eb"/>
+  </producedTypes>
+  <name>ПосещениеАтракциона</name>
+  <synonym>
+    <key>ru</key>
+    <value>Посещение атракциона</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПосещениеАтракциона.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.АктивныеПосещения</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="1828a284-524f-4870-8324-f229fea30343">
+    <name>Атракцион</name>
+    <synonym>
+      <key>ru</key>
+      <value>Атракцион</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Атракционы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1bf568d2-6e2e-4ae0-8782-3617be00bb82">
+    <name>Основание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основание</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ПродажаБилета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Document>
